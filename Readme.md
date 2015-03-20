@@ -1,4 +1,4 @@
-[![Build Status](https://circleci.com/gh/segmentio/integration-direct/tree/master.png?style=badge)](https://circleci.com/gh/segmentio/integration-direct/tree/master)
+[![Circle CI](https://circleci.com/gh/segmentio/integration-direct.svg?style=svg&circle-token=205515121d02256427e62783d2f041da79f6e585)](https://circleci.com/gh/segmentio/integration-direct)
 
 # integration-direct
 
@@ -8,7 +8,7 @@ Direct integration worker for Segment.
 
 (The MIT License)
 
-Copyright (c) 2014 Segment.io &lt;friends@segment.io&gt;
+Copyright (c) 2015 Segment.io &lt;friends@segment.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
