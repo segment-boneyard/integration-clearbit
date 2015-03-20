@@ -1,0 +1,102 @@
+{
+  "input": {
+    "anonymousId": "F032DE0C-CDCF-11E4-83E2-1681E6B88EC1",
+    "context": {
+      "app": {
+        "build": "10",
+        "name": "Segment",
+        "namespace": "com.segment.app",
+        "version": "1.0.0"
+      },
+      "device": {
+        "adTrackingEnabled": true,
+        "advertisingId": "516A0944-CDCF-11E4-83E2-1681E6B88EC1",
+        "id": "516A0D54-CDCF-11E4-83E2-1681E6B88EC1",
+        "manufacturer": "Apple",
+        "model": "iPhone4,1",
+        "type": "ios"
+      },
+      "library": {
+        "name": "analytics-ios",
+        "version": "1.11.2"
+      },
+      "locale": "en-US",
+      "network": {
+        "bluetooth": false,
+        "carrier": "Verizon"
+      },
+      "os": {
+        "name": "iPhone OS",
+        "version": "8.2"
+      },
+      "screen": {
+        "height": 480,
+        "width": 320
+      },
+      "timezone": "America/Los_Angeles",
+      "traits": {},
+      "ip": "10.0.0.1"
+    },
+    "messageId": "516A0EA8-CDCF-11E4-83E2-1681E6B88EC1",
+    "name": "Home",
+    "properties": {},
+    "timestamp": "2015-01-01T00:00:00.501Z",
+    "type": "screen",
+    "userId": "user-id",
+    "sentAt": "2015-01-01T00:00:00.000Z",
+    "receivedAt": "2015-01-01T00:00:00.501Z",
+    "originalTimestamp": "2015-01-01T00:00:00.000Z",
+    "integrations": {
+      "Salesforce": true
+    },
+    "projectId": "fd3zp37y",
+    "writeKey": "4tyshx8l72"
+  },
+  "output": {
+    "anonymousId": "F032DE0C-CDCF-11E4-83E2-1681E6B88EC1",
+    "context": {
+      "app": {
+        "build": "10",
+        "name": "Segment",
+        "namespace": "com.segment.app",
+        "version": "1.0.0"
+      },
+      "device": {
+        "adTrackingEnabled": true,
+        "advertisingId": "516A0944-CDCF-11E4-83E2-1681E6B88EC1",
+        "id": "516A0D54-CDCF-11E4-83E2-1681E6B88EC1",
+        "manufacturer": "Apple",
+        "model": "iPhone4,1",
+        "type": "ios"
+      },
+      "library": {
+        "name": "analytics-ios",
+        "version": "1.11.2"
+      },
+      "locale": "en-US",
+      "network": {
+        "bluetooth": false,
+        "carrier": "Verizon"
+      },
+      "os": {
+        "name": "iPhone OS",
+        "version": "8.2"
+      },
+      "screen": {
+        "height": 480,
+        "width": 320
+      },
+      "timezone": "America/Los_Angeles",
+      "traits": {},
+      "ip": "10.0.0.1"
+    },
+    "messageId": "516A0EA8-CDCF-11E4-83E2-1681E6B88EC1",
+    "name": "Home",
+    "properties": {},
+    "timestamp": "2015-01-01T00:00:00.501Z",
+    "type": "screen",
+    "userId": "user-id",
+    "sentAt": "2015-01-01T00:00:00.000Z",
+    "receivedAt": "2015-01-01T00:00:00.501Z"
+  }
+}
