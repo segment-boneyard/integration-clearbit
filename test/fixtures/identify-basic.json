@@ -1,0 +1,106 @@
+{
+  "input": {
+    "anonymousId": "eb7b8dc9-de50-4e53-b652-f9261b1d9572",
+    "channel": "client",
+    "context": {
+      "ip": "67.207.109.102",
+      "library": {
+        "name": "analytics.js",
+        "version": "2.8.0"
+      },
+      "page": {
+        "path": "/",
+        "referrer": "",
+        "search": "",
+        "title": "Segment - We make customer data simple.",
+        "url": "https://segment.com/"
+      },
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
+    },
+    "messageId": "34ab4e95-35f9-4dc3-a937-6571c89af251",
+    "receivedAt": "2015-03-07T03:36:47.174Z",
+    "sentAt": "2015-03-07T03:36:47.568Z",
+    "timestamp": "2015-03-07T03:36:47.172Z",
+    "traits": {
+      "address": {
+        "city": "San Francisco",
+        "country": "USA",
+        "postalCode": "94103",
+        "state": "CA",
+        "street": "101 15th Street"
+      },
+      "age": 26,
+      "avatar": "http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50",
+      "birthday": "1989-01-01T00:00:00.000Z",
+      "createdAt": "2015-01-01T00:00:00.000Z",
+      "description": "Just another user.",
+      "email": "jill@test.com",
+      "firstName": "Jill",
+      "gender": "female",
+      "id": "12345",
+      "lastName": "Smith",
+      "name": "Jill Smith",
+      "phone": "555-555-5555",
+      "title": "VP of Engineering",
+      "username": "jsmith",
+      "website": "http://www.segment.com"
+    },
+    "type": "identify",
+    "userId": "12345",
+    "version": "2",
+    "originalTimestamp": "2015-01-01T00:00:00.000Z",
+    "projectId": "fd3zp37y",
+    "writeKey": "4tyshx8l72"
+  },
+  "output": {
+    "anonymous_id": "eb7b8dc9-de50-4e53-b652-f9261b1d9572",
+    "channel": "client",
+    "context": {
+      "ip": "67.207.109.102",
+      "library": {
+        "name": "analytics.js",
+        "version": "2.8.0"
+      },
+      "page": {
+        "path": "/",
+        "referrer": "",
+        "search": "",
+        "title": "Segment - We make customer data simple.",
+        "url": "https://segment.com/"
+      },
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
+    },
+    "message_id": "34ab4e95-35f9-4dc3-a937-6571c89af251",
+    "received_at": "2015-03-07T03:36:47.174Z",
+    "sent_at": "2015-03-07T03:36:47.568Z",
+    "timestamp": "2015-03-07T03:36:47.172Z",
+    "traits": {
+      "address": {
+        "city": "San Francisco",
+        "country": "USA",
+        "postal_code": "94103",
+        "state": "CA",
+        "street": "101 15th Street"
+      },
+      "age": 26,
+      "avatar": "http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50",
+      "birthday": "1989-01-01T00:00:00.000Z",
+      "created_at": "2015-01-01T00:00:00.000Z",
+      "description": "Just another user.",
+      "email": "jill@test.com",
+      "first_name": "Jill",
+      "gender": "female",
+      "id": "12345",
+      "last_name": "Smith",
+      "name": "Jill Smith",
+      "phone": "555-555-5555",
+      "title": "VP of Engineering",
+      "username": "jsmith",
+      "website": "http://www.segment.com"
+    },
+    "type": "identify",
+    "user_id": "12345",
+    "version": "2",
+    "write_key": "4tyshx8l72"
+  }
+}

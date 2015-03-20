@@ -1,0 +1,34 @@
+{
+  "name": "integration-clearbit",
+  "version": "1.0.0",
+  "integration-version": "2016-07-07",
+  "private": true,
+  "description": "Clearbit server side integration.",
+  "author": "Segment <friends@segment.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/segmentio/integration-clearbit"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "lodash.compose": "^2.4.1",
+    "lodash.reduce": "^3.1.2",
+    "lodash.omit": "^3.1.0",
+    "segmentio-integration": "^3.2.0",
+    "snakeize": "0.0.1",
+    "to-snake-case": "^0.1.2",
+    "is": "^2.1.0",
+    "@ndhoule/foldl": "^1.0.3",
+    "extend": "3.0.0"
+  },
+  "devDependencies": {
+    "istanbul": "0.x",
+    "jscs": "1.x",
+    "mocha": "2.x",
+    "segmentio-integration-tester": "1.x",
+    "segmentio-facade": "2.x"
+  }
+}
