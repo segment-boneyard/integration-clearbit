@@ -30,15 +30,15 @@ describe('Direct', function(){
       endpoint: 'http://localhost:4000'
     };
     direct = new Direct(settings);
-    test = Test(direct, __dirname);
+    test = new Test(direct, __dirname);
   });
 
   it('should have the correct settings', function(){
     test
-    .name('Direct')
-    .ensure('settings.apiKey')
-    .channels(['server', 'mobile', 'client'])
-    .timeout('3s');
+      .name('Direct')
+      .ensure('settings.apiKey')
+      .channels(['server', 'mobile', 'client'])
+      .timeout('3s');
   });
 
   describe('.validate()', function(){
@@ -79,10 +79,10 @@ describe('Direct', function(){
         });
 
         test
-        .set(settings)
-        [type](json.input)
-        .expects(200)
-        .end(done);
+          .set(settings)
+          [type](json.input)
+          .expects(200)
+          .end(done);
       });
 
       it('should error on invalid calls', function(done){
@@ -95,10 +95,10 @@ describe('Direct', function(){
         });
 
         test
-        .set(settings)
-        [type](json.input)
-        .expects(503)
-        .error(done);
+          .set(settings)
+          [type](json.input)
+          .expects(503)
+          .error(done);
       });
 
       it('should send basic auth in the Authorization header', function(done){
