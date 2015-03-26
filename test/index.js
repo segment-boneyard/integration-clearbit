@@ -14,13 +14,13 @@ describe('Direct', function(){
   var direct;
   var types = ['track', 'identify', 'alias', 'group', 'page', 'screen'];
 
-  before(function(done){
+  beforeEach(function(done){
     app = express();
     app.use(express.bodyParser());
     server = app.listen(4000, done);
   });
 
-  after(function(done){
+  afterEach(function(done){
     server.close(done);
   });
 
