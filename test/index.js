@@ -26,6 +26,7 @@ describe('Direct', function(){
 
   beforeEach(function(){
     settings = {
+      apiKey: 'xyz',
       endpoint: 'http://localhost:4000'
     };
     direct = new Direct(settings);
@@ -35,18 +36,27 @@ describe('Direct', function(){
   it('should have the correct settings', function(){
     test
     .name('Direct')
+    .ensure('settings.apiKey')
     .channels(['server', 'mobile', 'client'])
     .timeout('3s');
   });
 
   describe('.validate()', function(){
     it('should be invalid if .endpoint isn\'t a url', function(){
-      test.invalid({}, { endpoint: true });
-      test.invalid({}, { endpoint: '' });
-      test.invalid({}, { endpoint: 'aaa' });
+      settings.endpoint = true;
+      test.invalid({}, settings);
+      settings.endpoint = '';
+      test.invalid({}, settings);
+      settings.endpoint = 'abc';
+      test.invalid({}, settings);
     });
 
-    it('should be valid if .endpoint is a url', function(){
+    it('should be invalid if .apiKey is not provided', function(){
+      delete settings.apiKey;
+      test.invalid({}, settings);
+    });
+
+    it('should be valid if all settings are provided', function(){
       test.valid({}, settings);
     });
   });
@@ -89,6 +99,21 @@ describe('Direct', function(){
         [type](json.input)
         .expects(503)
         .error(done);
+      });
+
+      it('should send basic auth in the Authorization header', function(done){
+        var route = '/' + type + '/success';
+        settings.endpoint += route;
+
+        app.post(route, function(req, res){
+          res.send(200);
+        });
+
+        test
+          .set(settings)
+          [type](json.input)
+          .expects(200)
+          .end(done);
       });
 
       it('should ignore bad reply', function(done){
