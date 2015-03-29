@@ -16,6 +16,7 @@ describe('Direct', function(){
 
   beforeEach(function(done){
     app = express();
+    app.use(express.basicAuth('xyz', ''));
     app.use(express.bodyParser());
     server = app.listen(4000, done);
   });
