@@ -16,7 +16,6 @@ describe('Direct', function(){
 
   beforeEach(function(done){
     app = express();
-    app.use(express.basicAuth('xyz', ''));
     app.use(express.bodyParser());
     server = app.listen(4000, done);
   });
@@ -28,6 +27,7 @@ describe('Direct', function(){
   beforeEach(function(){
     settings = {
       apiKey: 'xyz',
+      apiSecret: 'zyx',
       endpoint: 'http://localhost:4000'
     };
     direct = new Direct(settings);
@@ -107,6 +107,18 @@ describe('Direct', function(){
         settings.endpoint += route;
 
         app.post(route, function(req, res){
+          assert.equal(typeof req.headers.authorization, 'string');
+
+          // Decode auth header
+          var creds = new Buffer(req.headers.authorization.replace('Basic ', ''), 'base64')
+            .toString('utf-8')
+            .split(':');
+          var username = creds[0];
+          var password = creds[1];
+
+          assert.equal(username, settings.apiKey);
+          assert.equal(password, settings.apiSecret);
+
           res.send(200);
         });
 
