@@ -1,4 +1,9 @@
 
+1.1.0 / 2015-04-13
+==================
+
+  * Add api secret (password) support to Auth header
+
 1.0.3 / 2015-03-28
 ==================
 
