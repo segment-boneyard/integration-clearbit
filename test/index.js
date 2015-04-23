@@ -42,6 +42,15 @@ describe('Direct', function(){
       .timeout('3s');
   });
 
+  it('should have configurable channels', function(){
+    settings.directChannels = ['server','mobile'];
+    test
+      .name('Direct')
+      .ensure('settings.apiKey')
+      .channels(['server', 'mobile'])
+      .timeout('3s');
+  });
+
   describe('.validate()', function(){
     it('should be invalid if .endpoint isn\'t a url', function(){
       settings.endpoint = true;
