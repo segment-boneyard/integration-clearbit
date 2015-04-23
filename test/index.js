@@ -28,22 +28,14 @@ describe('Direct', function(){
     settings = {
       apiKey: 'xyz',
       apiSecret: 'zyx',
-      endpoint: 'http://localhost:4000'
+      endpoint: 'http://localhost:4000',
+      directChannels: ['server', 'mobile']
     };
     direct = new Direct(settings);
     test = new Test(direct, __dirname);
   });
 
-  it('should have the correct settings', function(){
-    test
-      .name('Direct')
-      .ensure('settings.apiKey')
-      .channels(['server', 'mobile', 'client'])
-      .timeout('3s');
-  });
-
-  it('should have configurable channels', function(){
-    settings.directChannels = ['server','mobile'];
+  it('should have configurable settings', function(){
     test
       .name('Direct')
       .ensure('settings.apiKey')
