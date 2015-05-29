@@ -35,12 +35,25 @@ describe('Direct', function(){
     test = new Test(direct, __dirname);
   });
 
-  it('should have configurable settings', function(){
-    test
-      .name('Direct')
-      .ensure('settings.apiKey')
-      .channels(['server', 'mobile'])
-      .timeout('3s');
+  describe('configuration', function(){
+    it('should have configurable channels', function(){
+      test
+        .name('Direct')
+        .ensure('settings.apiKey')
+        .channels(['server', 'mobile'])
+        .timeout('3s');
+    });
+
+    it('should have a configurable endpoint', function(){
+      // Initialize is called on integration creation so
+      // we create new `direct` and `test` instances to
+      // verify that subdomain is rendered correctly
+      settings.endpoint = 'http://{{ subdomain }}.localhost:4000';
+      settings.subdomain = 'segment';
+      direct = new Direct(settings);
+      test = new Test(direct, __dirname);
+      test.endpoint('http://segment.localhost:4000');
+    });
   });
 
   describe('.validate()', function(){
@@ -50,6 +63,9 @@ describe('Direct', function(){
       settings.endpoint = '';
       test.invalid({}, settings);
       settings.endpoint = 'abc';
+      test.invalid({}, settings);
+      // Case where template variable is omitted from settings
+      settings.endpoint = 'http://{{ subDomain }}.localhost:4000';
       test.invalid({}, settings);
     });
 
