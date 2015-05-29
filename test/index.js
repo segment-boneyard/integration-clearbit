@@ -65,7 +65,7 @@ describe('Direct', function(){
       settings.endpoint = 'abc';
       test.invalid({}, settings);
       // Case where template variable is omitted from settings
-      settings.endpoint = 'http://{{ subDomain }}.localhost:4000';
+      settings.endpoint = 'http://{{ subdomain }}.localhost:4000';
       test.invalid({}, settings);
     });
 
