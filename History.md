@@ -1,4 +1,11 @@
 
+1.1.2 / 2015-05-30
+==================
+
+  * Unit tests for helper functions
+  * Refactored helper functions into separate file
+  * Added configurable subdomains
+
 1.1.1 / 2015-04-29
 ==================
 
