@@ -52,7 +52,9 @@ describe('Direct', function(){
       settings.subdomain = 'segment';
       direct = new Direct(settings);
       test = new Test(direct, __dirname);
-      test.endpoint('http://segment.localhost:4000');
+      // TODO: use test.endpoint when we set rendered endpoint on proto
+      // and not on settings
+      assert('http://segment.localhost:4000' === test.settings.endpoint);
     });
   });
 
@@ -90,7 +92,6 @@ describe('Direct', function(){
       it('should succeed on valid call', function(done){
         var route = '/' + type + '/success';
         settings.endpoint += route;
-        direct.endpoint = settings.endpoint;
 
         app.post(route, function(req, res){
           assert.deepEqual(req.body, snakeize(json.output));
@@ -123,7 +124,6 @@ describe('Direct', function(){
       it('should send basic auth in the Authorization header', function(done){
         var route = '/' + type + '/success';
         settings.endpoint += route;
-        direct.endpoint = settings.endpoint;
 
         app.post(route, function(req, res){
           assert.equal(typeof req.headers.authorization, 'string');
@@ -151,7 +151,6 @@ describe('Direct', function(){
       it('should ignore bad reply', function(done){
         var route = '/bad';
         settings.endpoint += route;
-        direct.endpoint = settings.endpoint;
 
         app.post(route, function(req, res){
           res.set('Content-Type', 'application/json');
