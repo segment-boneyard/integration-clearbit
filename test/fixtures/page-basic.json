@@ -43,7 +43,7 @@
     "writeKey": "4tyshx8l72"
   },
   "output": {
-    "anonymousId": "2196e8a9-71cc-4bd2-8b1a-ae7d2bad2536",
+    "anonymous_id": "2196e8a9-71cc-4bd2-8b1a-ae7d2bad2536",
     "category": "Sign Up",
     "channel": "client",
     "context": {
@@ -59,9 +59,9 @@
         "title": "Segment - We make customer data simple.",
         "url": "https://segment.com/"
       },
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
     },
-    "messageId": "3909b424-2361-4166-a1e2-c522830885ed",
+    "message_id": "3909b424-2361-4166-a1e2-c522830885ed",
     "name": "Confirm",
     "properties": {
       "category": "Sign Up",
@@ -72,11 +72,14 @@
       "title": "Segment - We make customer data simple.",
       "url": "https://segment.com/"
     },
-    "receivedAt": "2015-03-07T04:11:03.221Z",
-    "sentAt": "2015-03-07T04:11:04.647Z",
+    "integrations": {
+      "Salesforce": true
+    },
+    "received_at": "2015-03-07T04:11:03.221Z",
+    "sent_at": "2015-03-07T04:11:04.647Z",
     "timestamp": "2015-03-07T04:11:03.219Z",
     "type": "page",
-    "userId": "12345",
+    "user_id": "12345",
     "version": "2"
   }
 }

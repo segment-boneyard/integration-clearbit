@@ -15,9 +15,13 @@
   "dependencies": {
     "lodash.compose": "^2.4.1",
     "lodash.reduce": "^3.1.2",
+    "lodash.omit": "^3.1.0",
     "segmentio-integration": "^3.2.0",
     "snakeize": "0.0.1",
-    "to-snake-case": "^0.1.2"
+    "to-snake-case": "^0.1.2",
+    "is": "^2.1.0",
+    "@ndhoule/foldl": "^1.0.3",
+    "extend": "3.0.0"
   },
   "devDependencies": {
     "express": "~3.2.6",

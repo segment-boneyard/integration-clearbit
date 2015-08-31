@@ -53,7 +53,7 @@
     "writeKey": "4tyshx8l72"
   },
   "output": {
-    "anonymousId": "F032DE0C-CDCF-11E4-83E2-1681E6B88EC1",
+    "anonymous_id": "F032DE0C-CDCF-11E4-83E2-1681E6B88EC1",
     "context": {
       "app": {
         "build": "10",
@@ -62,8 +62,8 @@
         "version": "1.0.0"
       },
       "device": {
-        "adTrackingEnabled": true,
-        "advertisingId": "516A0944-CDCF-11E4-83E2-1681E6B88EC1",
+        "ad_tracking_enabled": true,
+        "advertising_id": "516A0944-CDCF-11E4-83E2-1681E6B88EC1",
         "id": "516A0D54-CDCF-11E4-83E2-1681E6B88EC1",
         "manufacturer": "Apple",
         "model": "iPhone4,1",
@@ -90,13 +90,16 @@
       "traits": {},
       "ip": "10.0.0.1"
     },
-    "messageId": "516A0EA8-CDCF-11E4-83E2-1681E6B88EC1",
+    "message_id": "516A0EA8-CDCF-11E4-83E2-1681E6B88EC1",
+    "integrations": {
+      "Salesforce": true
+    },
     "name": "Home",
     "properties": {},
     "timestamp": "2015-01-01T00:00:00.501Z",
     "type": "screen",
-    "userId": "user-id",
-    "sentAt": "2015-01-01T00:00:00.000Z",
-    "receivedAt": "2015-01-01T00:00:00.501Z"
+    "user_id": "user-id",
+    "sent_at": "2015-01-01T00:00:00.000Z",
+    "received_at": "2015-01-01T00:00:00.501Z"
   }
 }
