@@ -36,7 +36,7 @@
     "writeKey": "4tyshx8l72"
   },
   "output": {
-    "anonymousId": "e8b2245e-6b8b-4193-bf88-37152851cb5c",
+    "anonymous_id": "e8b2245e-6b8b-4193-bf88-37152851cb5c",
     "channel": "client",
     "context": {
       "ip": "67.207.109.102",
@@ -51,18 +51,21 @@
         "title": "Segment - We make customer data simple.",
         "url": "https://segment.com/"
       },
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
     },
     "event": "Completed Order",
-    "messageId": "02898651-927b-4173-92ed-4a341c63ab5c",
+    "message_id": "02898651-927b-4173-92ed-4a341c63ab5c",
     "properties": {
       "revenue": "19.99"
     },
-    "receivedAt": "2015-03-07T03:47:25.347Z",
-    "sentAt": "2015-03-07T03:47:25.174Z",
+    "integrations": {
+      "Salesforce": true
+    },
+    "received_at": "2015-03-07T03:47:25.347Z",
+    "sent_at": "2015-03-07T03:47:25.174Z",
     "timestamp": "2015-03-07T03:47:25.345Z",
     "type": "track",
-    "userId": "12345",
+    "user_id": "12345",
     "version": "2"
   }
 }

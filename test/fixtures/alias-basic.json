@@ -33,7 +33,7 @@
     "writeKey": "4tyshx8l72"
   },
   "output": {
-    "anonymousId": "45c2be4f-f80a-4f7e-b7f8-df8a8b990f5b",
+    "anonymous_id": "45c2be4f-f80a-4f7e-b7f8-df8a8b990f5b",
     "channel": "client",
     "context": {
       "ip": "67.207.109.102",
@@ -48,15 +48,18 @@
         "title": "Segment - We make customer data simple.",
         "url": "https://segment.com/"
       },
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
     },
-    "messageId": "9a33bf1e-8b8d-426a-a807-fcb7026cbd57",
-    "previousId": "newuser@test.com",
-    "receivedAt": "2015-03-07T04:14:15.422Z",
-    "sentAt": "2015-03-07T04:14:13.302Z",
+    "integrations": {
+      "Salesforce": true
+    },
+    "message_id": "9a33bf1e-8b8d-426a-a807-fcb7026cbd57",
+    "previous_id": "newuser@test.com",
+    "received_at": "2015-03-07T04:14:15.422Z",
+    "sent_at": "2015-03-07T04:14:13.302Z",
     "timestamp": "2015-03-07T04:14:15.420Z",
     "type": "alias",
-    "userId": "olduser@test.com",
+    "user_id": "olduser@test.com",
     "version": "2"
   }
 }

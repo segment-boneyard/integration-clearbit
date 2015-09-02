@@ -94,7 +94,7 @@ describe('Direct', function(){
         settings.endpoint += route;
 
         app.post(route, function(req, res){
-          assert.deepEqual(req.body, snakeize(json.output));
+          assert.deepEqual(req.body, json.output);
           res.send(200);
         });
 
@@ -110,7 +110,7 @@ describe('Direct', function(){
         settings.endpoint += route;
 
         app.post(route, function(req, res){
-          assert.deepEqual(req.body, snakeize(json.output));
+          assert.deepEqual(req.body, json.output);
           res.send(503);
         });
 
