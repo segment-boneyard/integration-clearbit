@@ -94,9 +94,6 @@
       "phone": "555-555-5555",
       "website": "http://test.com"
     },
-    "integrations": {
-      "Salesforce": true
-    },
     "type": "group",
     "user_id": "12345",
     "version": "2"

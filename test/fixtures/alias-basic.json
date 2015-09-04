@@ -50,9 +50,6 @@
       },
       "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36"
     },
-    "integrations": {
-      "Salesforce": true
-    },
     "message_id": "9a33bf1e-8b8d-426a-a807-fcb7026cbd57",
     "previous_id": "newuser@test.com",
     "received_at": "2015-03-07T04:14:15.422Z",

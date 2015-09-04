@@ -91,9 +91,6 @@
       "ip": "10.0.0.1"
     },
     "message_id": "516A0EA8-CDCF-11E4-83E2-1681E6B88EC1",
-    "integrations": {
-      "Salesforce": true
-    },
     "name": "Home",
     "properties": {},
     "timestamp": "2015-01-01T00:00:00.501Z",

@@ -49,9 +49,6 @@
     "userId": "12345",
     "version": "2",
     "originalTimestamp": "2015-01-01T00:00:00.000Z",
-    "integrations": {
-      "Salesforce": true
-    },
     "projectId": "fd3zp37y",
     "writeKey": "4tyshx8l72"
   },
@@ -100,9 +97,6 @@
       "title": "VP of Engineering",
       "username": "jsmith",
       "website": "http://www.segment.com"
-    },
-    "integrations": {
-      "Salesforce": true
     },
     "type": "identify",
     "user_id": "12345",
