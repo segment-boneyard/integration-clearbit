@@ -41,25 +41,28 @@ describe('Helpers', function(){
   });
 
   describe('transform', function(){
-    it('should remove extraneous settings from message', function(){
+    it('should transform message settings', function(){
       var msg = {
         project_id: '1234',
         write_key: '4312',
         original_timestamp: '',
+        settings: {
+          direct : true,
+          endpoint : 'https://integrations.staging-public.mailjet.com/segment/endpoint',
+          apiKey : '9133a7de32351051fdb82d7c88d4b7f8',
+          apiSecret : '7f9e0d734fe9cb24eab1ba044f7e5665',
+          listId : '1',
+          events: { hello: 'world' }
+        },
         integrations: {
           Mailjet: {
-            direct : true,
-            endpoint : 'https://integrations.staging-public.mailjet.com/segment/endpoint',
-            apiKey : '9133a7de32351051fdb82d7c88d4b7f8',
-            apiSecret : '7f9e0d734fe9cb24eab1ba044f7e5665',
-            listId : '1',
-            events: { hello: 'world' }
+            listId: '3'
           }
         }
       };
       msg = transform(msg);
-      assert(msg.integrations.Mailjet.list_id == '1');
-      assert(!msg.integrations.Mailjet.apiKey);
+      assert(msg.settings.list_id === '3');
+      assert(!msg.settings.apiKey);
     });
   });
 });

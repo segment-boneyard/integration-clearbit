@@ -58,9 +58,6 @@
     "properties": {
       "revenue": "19.99"
     },
-    "integrations": {
-      "Salesforce": true
-    },
     "received_at": "2015-03-07T03:47:25.347Z",
     "sent_at": "2015-03-07T03:47:25.174Z",
     "timestamp": "2015-03-07T03:47:25.345Z",
