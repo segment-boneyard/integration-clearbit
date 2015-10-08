@@ -71,11 +71,6 @@ describe('Direct', function(){
       test.invalid({}, settings);
     });
 
-    it('should be invalid if .apiKey is not provided', function(){
-      delete settings.apiKey;
-      test.invalid({}, settings);
-    });
-
     it('should be valid if all settings are provided', function(){
       test.valid({}, settings);
     });
@@ -138,6 +133,23 @@ describe('Direct', function(){
           assert.equal(username, settings.apiKey);
           assert.equal(password, settings.apiSecret);
 
+          res.send(200);
+        });
+
+        test
+          .set(settings)
+          [type](json.input)
+          .expects(200)
+          .end(done);
+      });
+
+      it('should not send auth header if apiKey not provided', function(done){
+        var route = '/' + type + '/success';
+        settings.endpoint += route;
+        delete settings.apiKey;
+
+        app.post(route, function(req, res){
+          assert(!req.headers.authorization);
           res.send(200);
         });
 
