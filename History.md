@@ -1,4 +1,11 @@
 
+1.1.8 / 2015-10-08
+==================
+
+  * Merge pull request #11 from segmentio/fix/apiKey
+  * Breaking up auth from request chain
+  * Added fallback apiKey empty string
+
 1.1.7 / 2015-09-04
 ==================
 
