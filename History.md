@@ -1,4 +1,10 @@
 
+1.1.9 / 2016-02-20
+==================
+
+  * set callback before headers are written
+  * add docker, refactor circle
+
 1.1.8 / 2015-10-08
 ==================
 
