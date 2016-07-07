@@ -1,17 +1,17 @@
 'use strict';
 
-var Direct = require('..');
+var Clearbit = require('..');
 var Test = require('segmentio-integration-tester');
 var assert = require('assert');
 var express = require('express');
 var snakeize = require('snakeize');
 
-describe('Direct', function(){
+describe('Clearbit', function(){
   var app;
   var server;
   var settings;
   var test;
-  var direct;
+  var clearbit;
   var types = ['track', 'identify', 'alias', 'group', 'page', 'screen'];
 
   beforeEach(function(done){
@@ -28,51 +28,19 @@ describe('Direct', function(){
     settings = {
       apiKey: 'xyz',
       apiSecret: 'zyx',
-      endpoint: 'http://localhost:4000',
-      directChannels: ['server', 'mobile']
+      endpoint: 'http://localhost:4000'
     };
-    direct = new Direct(settings);
-    test = new Test(direct, __dirname);
+    clearbit = new Clearbit(settings);
+    test = new Test(clearbit, __dirname);
   });
 
   describe('configuration', function(){
     it('should have configurable channels', function(){
       test
-        .name('Direct')
+        .name('Clearbit')
         .ensure('settings.apiKey')
-        .channels(['server', 'mobile'])
+        .channels(['server', 'mobile', 'client'])
         .timeout('3s');
-    });
-
-    it('should have a configurable endpoint', function(){
-      // Initialize is called on integration creation so
-      // we create new `direct` and `test` instances to
-      // verify that subdomain is rendered correctly
-      settings.endpoint = 'http://{{ subdomain }}.localhost:4000';
-      settings.subdomain = 'segment';
-      direct = new Direct(settings);
-      test = new Test(direct, __dirname);
-      // TODO: use test.endpoint when we set rendered endpoint on proto
-      // and not on settings
-      assert('http://segment.localhost:4000' === test.settings.endpoint);
-    });
-  });
-
-  describe('.validate()', function(){
-    it('should be invalid if .endpoint isn\'t a url', function(){
-      settings.endpoint = true;
-      test.invalid({}, settings);
-      settings.endpoint = '';
-      test.invalid({}, settings);
-      settings.endpoint = 'abc';
-      test.invalid({}, settings);
-      // Case where template variable is omitted from settings
-      settings.endpoint = 'http://{{ subdomain }}.localhost:4000';
-      test.invalid({}, settings);
-    });
-
-    it('should be valid if all settings are provided', function(){
-      test.valid({}, settings);
     });
   });
 
