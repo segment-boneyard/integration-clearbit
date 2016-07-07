@@ -49,7 +49,6 @@ describe('Clearbit', function(){
         test
           .set(settings)
           [type](json.input)
-          .sends(json.output)
           .expects(200)
           .end(done);
       });
