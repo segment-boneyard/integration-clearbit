@@ -1,8 +1,8 @@
-[![Circle CI](https://circleci.com/gh/segmentio/integration-direct.svg?style=svg&circle-token=205515121d02256427e62783d2f041da79f6e585)](https://circleci.com/gh/segmentio/integration-direct)
+[![Circle CI](https://circleci.com/gh/segmentio/integration-direct.svg?style=svg&circle-token=205515121d02256427e62783d2f041da79f6e585)](https://circleci.com/gh/segment-integrations/integration-clearbit)
 
-# integration-direct
+# integration-clearbit
 
-Direct integration worker for Segment.
+Clearbit integration
 
 ## License
 
