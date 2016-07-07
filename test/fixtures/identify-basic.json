@@ -100,6 +100,7 @@
     },
     "type": "identify",
     "user_id": "12345",
-    "version": "2"
+    "version": "2",
+    "write_key": "4tyshx8l72"
   }
 }

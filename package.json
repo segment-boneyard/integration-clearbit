@@ -25,7 +25,6 @@
     "extend": "3.0.0"
   },
   "devDependencies": {
-    "express": "~3.2.6",
     "istanbul": "0.x",
     "jscs": "1.x",
     "mocha": "2.x",
