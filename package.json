@@ -17,7 +17,7 @@
     "lodash.compose": "^2.4.1",
     "lodash.reduce": "^3.1.2",
     "lodash.omit": "^3.1.0",
-    "segmentio-integration": "^5.0.1",
+    "segmentio-integration": "^5.1.0",
     "snakeize": "0.0.1",
     "to-snake-case": "^0.1.2",
     "is": "^2.1.0",
