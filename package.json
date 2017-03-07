@@ -1,6 +1,6 @@
 {
   "name": "@segment/integration-clearbit",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "integration-version": "2016-07-07",
   "description": "Clearbit server side integration.",
   "author": "Segment <friends@segment.com>",
