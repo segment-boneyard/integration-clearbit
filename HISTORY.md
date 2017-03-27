@@ -1,4 +1,9 @@
 
+1.3.0 / 2017-03-27
+==================
+
+  * Remove timeout, retries overrides to pick up default values
+
 1.2.0 / 2017-03-07
 ==================
 
